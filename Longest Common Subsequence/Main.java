@@ -1,4 +1,3 @@
-
 /**
  *
  * @author Chamal Lakshika Perera
@@ -7,10 +6,11 @@
 public class Main {
 
     public static void main(String[] args) {
-        String y = "ABCBDAB";
-        String x = "BDCABA";
+        
+        String[] x = {"1","2","3"};
+        String[] y = {"2","3","3"};
         LCS lcs = new LCS();
         int c[][] = lcs.initLCS(x, y);
-        System.out.println(lcs.backtrack(c, x, y, x.length(), y.length()));
+        System.out.println(lcs.backtrack(c, x, y, x.length, y.length));
     }
 }
